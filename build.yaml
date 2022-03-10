@@ -1,0 +1,11 @@
+builders:
+  classy:
+      target: ':json_to_class_generator'
+      import: 'package:json_to_class_generator/builder.dart'
+      builder_factories:
+          - classBuilder
+      build_extensions:
+          .json:
+              - '.g.dart'
+      auto_apply: dependents
+      build_to: source
